@@ -1,7 +1,7 @@
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
-search.addEventListener('input', () => searchStates(search.value))
+
 
 //Search states.json and filter it
 const searchStates = async searchText => {
@@ -42,3 +42,5 @@ const outputHtml = matches =>{
         matchList.innerHTML = html;
     }
 };
+
+search.addEventListener('input', () => searchStates(search.value))
